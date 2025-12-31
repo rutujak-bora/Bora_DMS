@@ -13,7 +13,7 @@ TEST: Pick-up Inward to In-Transit Flow - Stock Summary & Purchase Analysis
 6. Transfer to Warehouse - verify In-Transit removed
 
 Auth: rutuja@bora.tech / rutuja@123
-URL: https://inventory-enhancer.preview.emergentagent.com
+URL: https://stockbulkactions.preview.emergentagent.com
 """
 
 import requests
@@ -22,7 +22,7 @@ from datetime import datetime
 import uuid
 
 # Configuration
-BASE_URL = "https://inventory-enhancer.preview.emergentagent.com/api"
+BASE_URL = "https://stockbulkactions.preview.emergentagent.com/api"
 
 # Test credentials
 TEST_USER = {

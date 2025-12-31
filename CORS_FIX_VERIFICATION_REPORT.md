@@ -63,8 +63,8 @@ load_dotenv(ROOT_DIR / '.env')
 
 ### Test 1: CORS Preflight (OPTIONS)
 ```bash
-curl -i -X OPTIONS 'https://inventory-enhancer.preview.emergentagent.com/api/auth/login' \
-  -H 'Origin: https://inventory-enhancer.preview.emergentagent.com' \
+curl -i -X OPTIONS 'https://stockbulkactions.preview.emergentagent.com/api/auth/login' \
+  -H 'Origin: https://stockbulkactions.preview.emergentagent.com' \
   -H 'Access-Control-Request-Method: POST' \
   -H 'Access-Control-Request-Headers: content-type,authorization'
 ```
@@ -75,7 +75,7 @@ HTTP/2 200 ✅
 access-control-allow-credentials: true
 access-control-allow-headers: Accept, Accept-Language, Authorization, Content-Language, Content-Type, Origin, X-Requested-With
 access-control-allow-methods: GET, POST, PUT, DELETE, OPTIONS, PATCH
-access-control-allow-origin: https://inventory-enhancer.preview.emergentagent.com
+access-control-allow-origin: https://stockbulkactions.preview.emergentagent.com
 access-control-max-age: 86400
 content-type: text/plain; charset=utf-8
 
@@ -86,9 +86,9 @@ OK
 
 ### Test 2: POST Login Request
 ```bash
-curl -i -X POST 'https://inventory-enhancer.preview.emergentagent.com/api/auth/login' \
+curl -i -X POST 'https://stockbulkactions.preview.emergentagent.com/api/auth/login' \
   -H 'Content-Type: application/json' \
-  -H 'Origin: https://inventory-enhancer.preview.emergentagent.com' \
+  -H 'Origin: https://stockbulkactions.preview.emergentagent.com' \
   -d '{"username":"rutuja@bora.tech","password":"rutuja@123"}'
 ```
 
@@ -111,7 +111,7 @@ content-type: application/json
 
 ### Test 3: Browser End-to-End Test
 **Test Steps:**
-1. Open https://inventory-enhancer.preview.emergentagent.com in fresh browser
+1. Open https://stockbulkactions.preview.emergentagent.com in fresh browser
 2. Click "Access Full System"
 3. Fill credentials: rutuja@bora.tech / rutuja@123
 4. Click "Sign In"
@@ -143,7 +143,7 @@ content-type: application/json
 
 #### OPTIONS Preflight Response:
 ```
-access-control-allow-origin: https://inventory-enhancer.preview.emergentagent.com
+access-control-allow-origin: https://stockbulkactions.preview.emergentagent.com
 access-control-allow-methods: GET, POST, PUT, DELETE, OPTIONS, PATCH
 access-control-allow-headers: Content-Type, Authorization, X-Requested-With, ...
 access-control-allow-credentials: true
@@ -171,7 +171,7 @@ CORS_ORIGINS=*
 
 **Frontend `.env` (already configured):**
 ```env
-REACT_APP_BACKEND_URL=https://inventory-enhancer.preview.emergentagent.com
+REACT_APP_BACKEND_URL=https://stockbulkactions.preview.emergentagent.com
 WDS_SOCKET_PORT=443
 ```
 
@@ -198,5 +198,5 @@ WDS_SOCKET_PORT=443
 ---
 
 **Report Date:** November 26, 2025  
-**Preview URL:** https://inventory-enhancer.preview.emergentagent.com  
+**Preview URL:** https://stockbulkactions.preview.emergentagent.com  
 **Status:** ✅ **ALL TESTS PASSED**

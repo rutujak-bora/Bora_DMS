@@ -6,7 +6,7 @@ Additional Companies API Debug Test - Test without authentication to check CORS 
 import requests
 import json
 
-BASE_URL = "https://inventory-enhancer.preview.emergentagent.com/api"
+BASE_URL = "https://stockbulkactions.preview.emergentagent.com/api"
 
 def test_companies_without_auth():
     """Test companies API without authentication to check if that's the issue"""
@@ -43,7 +43,7 @@ def test_cors_preflight():
         response = requests.options(
             f"{BASE_URL}/companies",
             headers={
-                'Origin': 'https://inventory-enhancer.preview.emergentagent.com',
+                'Origin': 'https://stockbulkactions.preview.emergentagent.com',
                 'Access-Control-Request-Method': 'GET',
                 'Access-Control-Request-Headers': 'authorization,content-type'
             }

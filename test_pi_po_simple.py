@@ -5,7 +5,7 @@ import requests
 import json
 
 # Test configuration
-BASE_URL = "https://inventory-enhancer.preview.emergentagent.com/api"
+BASE_URL = "https://stockbulkactions.preview.emergentagent.com/api"
 AUTH_TOKEN = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2YWFkZmFiYi0xZDgzLTQ5NGYtODcyMi1hNGIwM2U2OTE4YzkiLCJleHAiOjE3NjQxNzYwNTJ9.eVJo7ZY8OiYEjzAoUkB9_QOYGEdhj5_-NHzZEQ2f3JI"
 
 headers = {

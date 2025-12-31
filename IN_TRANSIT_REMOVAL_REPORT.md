@@ -164,7 +164,7 @@ sudo supervisorctl status backend
 # Result: RUNNING
 
 # No in-transit endpoints accessible
-curl https://inventory-enhancer.preview.emergentagent.com/api/inward-stock/pickup-pending
+curl https://stockbulkactions.preview.emergentagent.com/api/inward-stock/pickup-pending
 # Expected: 404 Not Found (endpoint removed)
 ```
 

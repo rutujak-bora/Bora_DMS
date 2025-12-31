@@ -47,7 +47,7 @@ import uuid
 from datetime import datetime
 
 # Configuration
-BASE_URL = "https://inventory-enhancer.preview.emergentagent.com/api"
+BASE_URL = "https://stockbulkactions.preview.emergentagent.com/api"
 
 class WarehousesBulkOperationsTestSuite:
     def __init__(self):

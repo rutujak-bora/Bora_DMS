@@ -454,4 +454,4 @@ The feature allows users to track additional payments beyond standard advance an
 **Implementation By:** AI Agent  
 **Date:** November 26, 2025  
 **Version:** 1.0.0
-**Preview Link:** https://inventory-enhancer.preview.emergentagent.com
+**Preview Link:** https://stockbulkactions.preview.emergentagent.com

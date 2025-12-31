@@ -1,7 +1,7 @@
 # Bora Mobility LLP - Login Credentials
 
 ## Application URL
-**Frontend**: https://inventory-enhancer.preview.emergentagent.com
+**Frontend**: https://stockbulkactions.preview.emergentagent.com
 
 ---
 
@@ -32,7 +32,7 @@
 
 ## Quick Login Instructions
 
-1. Navigate to: https://inventory-enhancer.preview.emergentagent.com
+1. Navigate to: https://stockbulkactions.preview.emergentagent.com
 2. Click "Login" button
 3. Enter email and password from the table above
 4. Select your workspace:
@@ -68,7 +68,7 @@ This account has full access to all features and is recommended for testing.
 
 If login fails:
 1. Ensure you're using the exact email and password from the tables above
-2. Check that you're accessing: https://inventory-enhancer.preview.emergentagent.com
+2. Check that you're accessing: https://stockbulkactions.preview.emergentagent.com
 3. Clear browser cache and try again
 4. Users are stored in MongoDB and passwords are securely hashed
 

@@ -96,7 +96,7 @@ Test Flow: Create payment entry linked to PI → Verify tracking
 
 **AUTHENTICATION:**
 - Use rutuja@bora.tech credentials
-- Backend URL: https://inventory-enhancer.preview.emergentagent.com
+- Backend URL: https://stockbulkactions.preview.emergentagent.com
 """
 
 import requests
@@ -108,7 +108,7 @@ import io
 import os
 
 # Configuration
-BASE_URL = "https://inventory-enhancer.preview.emergentagent.com/api"
+BASE_URL = "https://stockbulkactions.preview.emergentagent.com/api"
 
 # Test credentials
 TEST_USERS = {

@@ -1,6 +1,6 @@
 # 🎉 FINAL TESTED LOGIN CREDENTIALS - 100% VERIFIED
 
-**Application URL**: https://inventory-enhancer.preview.emergentagent.com
+**Application URL**: https://stockbulkactions.preview.emergentagent.com
 
 **Test Date**: October 10, 2025  
 **Test Results**: ✅ **9/9 Users Passed (100% Success Rate)**  
@@ -37,7 +37,7 @@
 
 ### Option 1: Admin Access (Recommended)
 ```
-URL: https://inventory-enhancer.preview.emergentagent.com
+URL: https://stockbulkactions.preview.emergentagent.com
 Email: rutuja@bora.tech
 Password: rutuja@123
 Workspace: All Companies Documentary
@@ -46,7 +46,7 @@ Access: Full System (Admin)
 
 ### Option 2: Regular User Access
 ```
-URL: https://inventory-enhancer.preview.emergentagent.com
+URL: https://stockbulkactions.preview.emergentagent.com
 Email: sunil@bora.tech
 Password: sunil@123
 Workspace: All Companies Documentary
@@ -55,7 +55,7 @@ Access: Standard User
 
 ### Option 3: DNS User Access
 ```
-URL: https://inventory-enhancer.preview.emergentagent.com
+URL: https://stockbulkactions.preview.emergentagent.com
 Email: rkn@bora.tech
 Password: rkn@123
 Workspace: DNS Documentary
@@ -67,7 +67,7 @@ Access: DNS Operations
 ## 📋 LOGIN STEPS
 
 1. **Navigate to Application**
-   - Open browser and go to: https://inventory-enhancer.preview.emergentagent.com
+   - Open browser and go to: https://stockbulkactions.preview.emergentagent.com
 
 2. **Click Login Button**
    - Click the "Login" button on the landing page

@@ -21,7 +21,7 @@ from datetime import datetime
 import time
 
 # Configuration
-BASE_URL = "https://inventory-enhancer.preview.emergentagent.com/api"
+BASE_URL = "https://stockbulkactions.preview.emergentagent.com/api"
 
 # Test credentials
 TEST_USER = {
