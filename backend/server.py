@@ -116,7 +116,17 @@ async def bulk_upload_companies(
 ):
     try:
         contents = await file.read()
-        df = pd.read_excel(io.BytesIO(contents), engine="openpyxl")
+        filename = file.filename.lower()
+
+if filename.endswith(".csv"):
+    df = pd.read_csv(io.BytesIO(contents))
+
+elif filename.endswith(".xls"):
+    df = pd.read_excel(io.BytesIO(contents), engine="xlrd")
+
+else:
+    df = pd.read_excel(io.BytesIO(contents), engine="openpyxl")
+
         
         companies = []
         for _, row in df.iterrows():
