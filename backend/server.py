@@ -118,16 +118,15 @@ async def bulk_upload_companies(
         contents = await file.read()
         filename = file.filename.lower()
 
-if filename.endswith(".csv"):
-    df = pd.read_csv(io.BytesIO(contents))
+        if filename.endswith(".csv"):
+            df = pd.read_csv(io.BytesIO(contents))
 
-elif filename.endswith(".xls"):
-    df = pd.read_excel(io.BytesIO(contents), engine="xlrd")
+        elif filename.endswith(".xls"):
+            df = pd.read_excel(io.BytesIO(contents), engine="xlrd")
 
-else:
-    df = pd.read_excel(io.BytesIO(contents), engine="openpyxl")
+        else:
+            df = pd.read_excel(io.BytesIO(contents), engine="openpyxl")
 
-        
         companies = []
         for _, row in df.iterrows():
             company_dict = {
@@ -144,13 +143,19 @@ else:
                 "updated_at": datetime.now(timezone.utc).isoformat()
             }
             companies.append(company_dict)
-        
+
         if companies:
             await mongo_db.companies.insert_many(companies)
-        
-        return {"message": f"Successfully uploaded {len(companies)} companies", "count": len(companies)}
+
+        return {
+            "message": f"Successfully uploaded {len(companies)} companies",
+            "count": len(companies)
+        }
+
     except Exception as e:
-        raise HTTPException(status_code=400, detail=f"Error processing file: {str(e)}")
+        raise HTTPException(
+            status_code=400,
+            detail=f"Error processing file: {str(e)}")
 
 @api_router.get("/companies")
 async def get_companies(current_user: dict = Depends(get_current_active_user)):
